@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(94, 110, 199);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-wrapper {
+  display: flex;
+}
+
+h1 {
+  color: #fff;
+}
+
+.container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  min-width: 200px;
+  min-height: 320px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgb(77, 92, 179);
+}
+
+.form {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  min-width: 200px;
+  min-height: 320px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgb(77, 92, 179);
+}
+
+h2 {
+  color: rgb(94, 110, 199);
+}
+
+.draggable {
+  padding: 4px 8px;
+  margin: 5px;
+  background-color: rgb(123, 136, 211);
+  box-shadow: 0px 4px 4px 0px rgb(99, 113, 192);
+  cursor: move;
+  border-radius: 4px;
+}
+
+.draggable span {
+  line-height: 1.2;
+  display: block;
+  color: #fff;
+}
+
+.draggable span:nth-child(1) {
+  font-weight: bold;
+}
+
+.draggable span:nth-child(2) {
+  font-style: italic;
+}
+
+.draggable span:nth-child(3) {
+  font-size: 12px;
+  justify-self: right;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+input {
+  padding: 8px 8px;
+  border-radius: 4px;
+  border: 1px solid;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 1.2;
+  padding: 8px 8px;
+  box-shadow: 0px 4px 4px 0px rgb(99, 113, 192);
+
+  background-color: rgb(123, 136, 211);
+}
+
+#trash {
+  height: 100px;
+  border: 4px dashed rgb(123, 136, 211);
+}
